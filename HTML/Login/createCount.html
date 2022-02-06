@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crear Cuenta</title>
+    <link rel="stylesheet" href="/Styles/style.css">
+</head>
+<body>
+   <div class="contenedorCrear">
+       <form action="/index.html" id="formCrear" name="formCrear" method="post">
+           <fieldset class="field_principal">
+               <legend>Crear Cuenta</legend>
+               <div class="elementoId">
+                <label for="idPersona">Codigo Persona:</label><br/>
+                <input type="text" name="idPersona" id="idPersona" readonly value="100" /><br/>
+               </div>
+               <div class="elemento">
+                <label for="name">Nombre:</label><br/>
+                <input type="text" name="name" id="name" placeholder="Escribe tu nombre" required/>
+               </div>
+               <div class="elemento">
+                <label for="lastname">Apellido:</label><br/>
+                <input type="text" name="lastname" id="lastname" placeholder="Escribe tu apellido"/><br/>
+               </div>
+               <div class="elementoRadio">
+                <label for="genero">Genero:</label><br/><br/>
+                <input type="radio" id="masculino" name="genero" value="masculino"/>
+                <label for="masculino">Masculino</label><br/>
+                <input type="radio" id="femenino" name="genero" value="femenino"/>
+                <label for="femenino">Femenino</label>
+               </div>
+               <br/><br/>
+               <div class="elemento">
+                <label for="age">Edad: </label><br/>
+                <input type="number" name="age" id="age" min="0" required><br/>
+               </div>
+               <div class="elemento">
+                <label for="email">Email: </label><br/>
+                <input type="email" name="email" id="email", placeholder="Escribe tu correo" required/><br/>
+                <label for="password">Contraseña: </label><br/>
+                <input type="password" name="password" id="password" required/><br/>
+               </div>
+               <div class="elemento">
+                <input type="submit" name="enviar" id="enviar">
+            </div>
+           </fieldset>
+       </form>
+   </div>
+   <div class="elemento">
+       <a href="index.html">Inicio</a>
+   </div>
+</body>
+</html>
